@@ -2,7 +2,7 @@ import React from "react";
 import SvgIcon from "@mui/material/SvgIcon";
 
 function CSSIcon(props) {
-  const { labelColor, transparencyColor } = props;
+  const { labelColor, transparencycolor } = props;
   return (
     <SvgIcon viewBox="0 0 256 361" {...props}>
       <g>
@@ -16,15 +16,15 @@ function CSSIcon(props) {
         ></path>
         <path
           d="M53.6685714,188.636132 L56.530989,220.572835 L128,220.572835 L128,188.636132 L53.6685714,188.636132 L53.6685714,188.636132 Z"
-          fill={transparencyColor}
+          fill={transparencycolor}
         ></path>
         <path
           d="M47.917011,123.994725 L50.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L47.917011,123.994725 Z"
-          fill={transparencyColor}
+          fill={transparencycolor}
         ></path>
         <path
           d="M128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L128,271.580132 Z"
-          fill={transparencyColor}
+          fill={transparencycolor}
         ></path>
         <path
           d="M60.4835165,0 L99.1648352,0 L99.1648352,16.1758242 L76.6593407,16.1758242 L76.6593407,32.3516484 L99.1648352,32.3516484 L99.1648352,48.5274725 L60.4835165,48.5274725 L60.4835165,0 L60.4835165,0 Z"
@@ -40,7 +40,7 @@ function CSSIcon(props) {
         ></path>
         <path
           d="M202.126769,188.636132 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.932132 L172.892132,155.932132 L169.98611,188.636132 L127.889582,188.636132 L127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L202.126769,188.636132 Z"
-          fill={transparencyColor}
+          fill={transparencycolor}
         ></path>
       </g>
     </SvgIcon>

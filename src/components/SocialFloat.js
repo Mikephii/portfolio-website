@@ -17,7 +17,7 @@ const SocialFloat = () => {
     width: "10vw",
     bottom: 0,
     left: 0,
-    zIndex: 1,
+    zIndex: 3,
     "@media (max-width:765px)": {
       opacity: 0,
     },
@@ -56,7 +56,9 @@ const SocialFloat = () => {
     >
       <div css={floatStyle}>
         <Link href="https://stackoverflow.com/users/9634038/mikephi">
-          <StackOverflowIcon css={iconStyle} />
+          <div>
+            <StackOverflowIcon css={iconStyle} />
+          </div>
         </Link>
         <Link href="https://github.com/Mikephii">
           <GitHubIcon css={iconStyle} />

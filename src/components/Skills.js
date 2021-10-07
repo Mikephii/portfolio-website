@@ -132,11 +132,7 @@ const Skills = () => {
           </Grow>
           <Grow in={animate} timeout={timeouts[4] * 500}>
             <div css={item}>
-              <CSSIcon
-                css={iconStyle}
-                labelColor={"#fff"}
-                transparencyColor={backgroundColor}
-              />
+              <CSSIcon css={iconStyle} transparencycolor={backgroundColor} />
               <Typography css={labelStyle}>CSS</Typography>
             </div>
           </Grow>
@@ -150,18 +146,14 @@ const Skills = () => {
             <div css={item}>
               <TypescriptIcon
                 css={iconStyle}
-                transparencyColor={backgroundColor}
+                transparencycolor={backgroundColor}
               />
               <Typography css={labelStyle}>Typescript</Typography>
             </div>
           </Grow>
           <Grow in={animate} timeout={timeouts[7] * 500}>
             <div css={item}>
-              <HTMLIcon
-                css={iconStyle}
-                labelColor={"#fff"}
-                transparencyColor={backgroundColor}
-              />
+              <HTMLIcon css={iconStyle} transparencycolor={backgroundColor} />
               <Typography css={labelStyle}>HTML5</Typography>
             </div>
           </Grow>

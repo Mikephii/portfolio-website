@@ -21,9 +21,10 @@ export default function PortfolioItemRight({
   link,
   projectPic,
 }) {
-  const stackMarkup = stack.map((item) => {
+  const stackMarkup = stack.map((item, index) => {
     return (
       <Typography
+        key={index}
         css={{
           marginRight: 15,
           fontFamily: "Varela Round",
