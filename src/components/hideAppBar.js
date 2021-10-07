@@ -4,25 +4,10 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import { Link } from "react-scroll";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
 import { highlightColor } from "../theme";
-
-function ElevationScroll(props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
-    target: window ? window() : undefined,
-  });
-
-  return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
-  });
-}
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -31,7 +16,7 @@ function HideOnScroll(props) {
     target: window ? window() : undefined,
   });
 
-  const trigger = useScrollTrigger({
+  const elevationTrigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
     target: window ? window() : undefined,
@@ -40,7 +25,7 @@ function HideOnScroll(props) {
   return (
     <Slide appear={false} direction="down" in={!hideTrigger}>
       {React.cloneElement(children, {
-        elevation: trigger ? 4 : 0,
+        elevation: elevationTrigger ? 4 : 0,
       })}
     </Slide>
   );
@@ -53,10 +38,14 @@ export default function HideAppBar(props) {
     alignItems: "center",
     width: "auto",
     marginLeft: "auto",
-    marginRight: 50,
+    marginRight: "10vw",
   });
 
-  const numberStyle = css({ color: highlightColor });
+  const numberStyle = css({
+    color: highlightColor,
+    fontFamily: "Varela Round",
+    fontSize: 12,
+  });
 
   const linkWrapper = css({
     cursor: "pointer",
@@ -70,34 +59,50 @@ export default function HideAppBar(props) {
   });
 
   return (
-    <React.Fragment>
+    <div
+      css={{
+        "@media (max-width:756px)": {
+          display: "none",
+        },
+      }}
+    >
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar css={{ zIndex: 1 }}>
           <Toolbar>
             <div css={navLinks}>
-              <div css={linkWrapper}>
-                <span css={numberStyle}>0.1</span>
-                <span> About</span>
-              </div>
+              <Link offset={-200} to="about" spy={true} smooth={true}>
+                <div css={linkWrapper}>
+                  <span css={numberStyle}>0.1</span>
+                  <span> About</span>
+                </div>
+              </Link>
 
-              <div css={linkWrapper}>
-                <span css={numberStyle}>0.2</span>
-                <span> Skills</span>
-              </div>
-              <div css={linkWrapper}>
-                <span css={numberStyle}>0.3</span>
-                <span> Work</span>
-              </div>
-              <div css={linkWrapper}>
-                <span css={numberStyle}>0.4</span>
-                <span> Contact</span>
-              </div>
+              <Link offset={-200} to="skills" spy={true} smooth={true}>
+                <div css={linkWrapper}>
+                  <span css={numberStyle}>0.2</span>
+                  <span> Skills</span>
+                </div>
+              </Link>
+
+              <Link offset={-200} to="work" spy={true} smooth={true}>
+                <div css={linkWrapper}>
+                  <span css={numberStyle}>0.3</span>
+                  <span> Work</span>
+                </div>
+              </Link>
+
+              <Link offset={-200} to="contact" spy={true} smooth={true}>
+                <div css={linkWrapper}>
+                  <span css={numberStyle}>0.4</span>
+                  <span> Contact</span>
+                </div>
+              </Link>
             </div>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
 
       <Toolbar />
-    </React.Fragment>
+    </div>
   );
 }

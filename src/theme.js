@@ -2,15 +2,24 @@ import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 import { TryRounded } from "@mui/icons-material";
 
-const backgroundColor = "#0a1929";
-const highlightColor = "#66b2ff";
+const backgroundColor = "#0a192f";
+const highlightColor = "#64ffda";
 
 // Create a theme instance.
 const theme = createTheme({
   palette: {
+    primary: {
+      main: "rgb(100, 255, 218)",
+    },
     mode: "dark",
     background: {
       default: backgroundColor,
+    },
+  },
+  typography: {
+    fontFamily: ["Source Sans Pro"],
+    allVariants: {
+      color: "rgba(255,255,255,0.9)",
     },
   },
   components: {
