@@ -61,11 +61,14 @@ const About = () => {
         <div css={{ width: "100%", color: "rgba(255,255,255,0.8)" }}>
           <Zoom in={animate}>
             <Typography>
-              Hi! My name is Michael and I’m a JavaScript Web Developer who
-              loves to learn new technologies and build modern websites. My
-              journey to web development started in university where I fell in
-              love with programming – I really enjoy problem solving and the
-              immediate feedback you get from software development.
+              Hi! My name is Michael and I’m an engineer who loves to learn and
+              invent. I previously worked for AusMed Global as lead product
+              engineer, where I helped invent the core technology and algorithms
+              supporting a consumer medical device for the detection and
+              measurement of breath ketones. I was awarded inventorship of our
+              subsequently filed patent: “Systems, sensors and methods for
+              determining a concentration of an analyte,”, PA Number:
+              2019336336.
             </Typography>
           </Zoom>
           <br />
@@ -74,11 +77,11 @@ const About = () => {
             style={{ transitionDelay: animate ? "100ms" : "0ms" }}
           >
             <Typography>
-              I have always been passionate about product ideas and the gateway
-              to customers has always been software. Understanding this, I took
-              it upon myself to learn modern, JavaScript based web application
-              technologies so that I can have the skillset to help companies
-              flourish and grow online.
+              I am passionate about using software to affect change in tangible
+              real-world applications. After working with Python and MATLAB for
+              3 years, I have taught myself modern JavaScript frameworks over
+              the past 12 months so that I can better apply myself to the
+              current software landscape in Australia.
             </Typography>
           </Zoom>
           <br />
@@ -87,11 +90,10 @@ const About = () => {
             style={{ transitionDelay: animate ? "200ms" : "0ms" }}
           >
             <Typography>
-              I recently had the privilege to participate in Antler Australia’s
-              early-stage start-up accelerator. I very quickly advanced my
-              skills in ReactJS and was fortunate enough to build connections
-              with some truly inspiring people building the products of
-              tomorrow.
+              I have a deep technical background, rapid learning abilities and
+              creative outlook. I love to work in teams, and nothing feels
+              better than working in a team that is united in our passion for
+              solving a common goal.
             </Typography>
           </Zoom>
           <br />
