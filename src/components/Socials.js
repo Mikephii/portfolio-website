@@ -22,8 +22,8 @@ const Socials = () => {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.download = "resume";
-    link.href = "/MichaelCollins-CV.pdf";
+    link.download = "Michael_Collins_CV";
+    link.href = "/michael_collins_cv.pdf";
     link.click();
   };
 
