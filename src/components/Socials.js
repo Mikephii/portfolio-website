@@ -23,7 +23,7 @@ const Socials = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
     link.download = "resume";
-    link.href = "/Michael_Collins_JavaScript_Developer.pdf";
+    link.href = "/MichaelCollins-CV.pdf";
     link.click();
   };
 
