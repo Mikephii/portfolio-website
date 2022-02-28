@@ -62,13 +62,7 @@ const About = () => {
           <Zoom in={animate}>
             <Typography>
               Hi! My name is Michael and I’m an engineer who loves to learn and
-              invent. I previously worked for AusMed Global as lead product
-              engineer, where I helped invent the core technology and algorithms
-              supporting a consumer medical device for the detection and
-              measurement of breath ketones. I was awarded inventorship of our
-              subsequently filed patent: “Systems, sensors and methods for
-              determining a concentration of an analyte,”, PA Number:
-              2019336336.
+              invent.
             </Typography>
           </Zoom>
           <br />
@@ -78,10 +72,8 @@ const About = () => {
           >
             <Typography>
               I am passionate about using software to affect change in tangible
-              real-world applications. After working with Python and MATLAB for
-              3 years, I have taught myself modern JavaScript frameworks over
-              the past 12 months so that I can better apply myself to the
-              current software landscape in Australia.
+              real-world applications. Im currently working with Antler
+              Australia to distrupt the VC industry globally.
             </Typography>
           </Zoom>
           <br />
